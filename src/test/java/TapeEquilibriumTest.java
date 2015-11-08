@@ -1,3 +1,4 @@
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -10,7 +11,7 @@ public class TapeEquilibriumTest {
 
     private TapeEquilibrium tapeEquilibrium;
 
-    @BeforeMethod
+    @BeforeClass
     public void setUp() throws Exception {
         tapeEquilibrium = new TapeEquilibrium();
     }
