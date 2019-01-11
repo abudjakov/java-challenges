@@ -1,5 +1,7 @@
+package archive;
+
+import archive.TapeEquilibrium;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 

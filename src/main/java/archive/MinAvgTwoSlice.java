@@ -1,3 +1,5 @@
+package archive;
+
 public class MinAvgTwoSlice {
 
     public int solution(int[] A) {

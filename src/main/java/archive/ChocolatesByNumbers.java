@@ -1,3 +1,5 @@
+package archive;
+
 public class ChocolatesByNumbers {
 
     public int solution(int N, int M) {

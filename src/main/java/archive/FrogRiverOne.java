@@ -1,3 +1,5 @@
+package archive;
+
 public class FrogRiverOne {
 
     public int solution(int X, int[] A) {

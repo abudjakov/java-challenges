@@ -1,3 +1,5 @@
+package archive;
+
 public class TapeEquilibrium {
 
     public int solution(int[] A) {

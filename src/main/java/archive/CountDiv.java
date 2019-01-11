@@ -1,3 +1,5 @@
+package archive;
+
 public class CountDiv {
 
     public int solution(int A, int B, int K) {
