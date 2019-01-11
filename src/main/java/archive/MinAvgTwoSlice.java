@@ -12,8 +12,7 @@ public class MinAvgTwoSlice {
             if (avOfTwo == min && !twoSlice) {
                 ind = i;
                 twoSlice = true;
-            }
-            else if (avOfTwo < min) {
+            } else if (avOfTwo < min) {
                 min = avOfTwo;
                 ind = i;
                 twoSlice = true;

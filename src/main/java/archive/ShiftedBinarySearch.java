@@ -19,18 +19,15 @@ class ShiftedBinarySearch {
 
         if (arr[low] <= arr[mid]) {
             if (value >= arr[low] && value < arr[mid]) {
-                return find(value, arr, low, mid -1);
-            }
-            else {
+                return find(value, arr, low, mid - 1);
+            } else {
                 return find(value, arr, mid + 1, high);
             }
-        }
-        else {
+        } else {
             if (value > arr[mid] && value <= arr[high]) {
                 return find(value, arr, mid + 1, high);
-            }
-            else {
-                return find(value, arr, low, mid -1);
+            } else {
+                return find(value, arr, low, mid - 1);
             }
         }
     }

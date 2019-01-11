@@ -10,11 +10,11 @@ public abstract class TailCall<T> {
 
     public abstract boolean isSuspend();
 
-    public static<T> TailCall<T> result(T value) {
+    public static <T> TailCall<T> result(T value) {
         return new Result<>(value);
     }
 
-    public static<T> TailCall<T> suspend(Supplier<TailCall<T>> resume) {
+    public static <T> TailCall<T> suspend(Supplier<TailCall<T>> resume) {
         return new Suspend<>(resume);
     }
 

@@ -1,6 +1,5 @@
 package archive;
 
-import archive.MinAvgTwoSlice;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;

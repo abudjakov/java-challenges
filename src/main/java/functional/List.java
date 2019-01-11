@@ -1,7 +1,5 @@
 package functional;
 
-import java.util.concurrent.TimeUnit;
-import java.util.function.BinaryOperator;
 import java.util.function.Function;
 
 public abstract class List<A> {

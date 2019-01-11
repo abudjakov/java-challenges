@@ -1,6 +1,5 @@
 package archive;
 
-import archive.FrogRiverOne;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;

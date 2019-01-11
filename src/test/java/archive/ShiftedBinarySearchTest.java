@@ -1,6 +1,5 @@
 package archive;
 
-import archive.ShiftedBinarySearch;
 import org.assertj.core.api.AutoCloseableSoftAssertions;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;

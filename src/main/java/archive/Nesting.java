@@ -10,11 +10,9 @@ public class Nesting {
         for (int i = 0; i < S.length(); i++) {
             if (S.charAt(i) == '(') {
                 stack.push(true);
-            }
-            else if (!stack.isEmpty()) {
+            } else if (!stack.isEmpty()) {
                 stack.pop();
-            }
-            else {
+            } else {
                 return -1;
             }
         }

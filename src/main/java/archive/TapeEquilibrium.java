@@ -15,7 +15,9 @@ public class TapeEquilibrium {
         }
 
         return min;
-    };
+    }
+
+    ;
 
     private int[] prefixSums(int[] A) {
         int n = A.length;

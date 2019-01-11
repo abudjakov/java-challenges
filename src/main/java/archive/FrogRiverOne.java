@@ -20,5 +20,7 @@ public class FrogRiverOne {
         }
 
         return -1;
-    };
+    }
+
+    ;
 }
