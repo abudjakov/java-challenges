@@ -1,28 +1,61 @@
 package string;
 
+import java.util.List;
+
 // Permutations for n from n: n!
 // Permutations for k from n: n! / (n - k)!
 // Combinations for k from n: n! / (k! * (n - k)!)
 public class Permutation {
 
-    void permutation(String s) {
-        permutation(s, "");
-    }
-
-    private void permutation(String s, String prefix) {
+    private static void permutations(String s, String prefix) {
         if (s.length() == 0) {
             System.out.println(prefix);
         } else {
             for (int i = 0; i < s.length(); i++) {
                 String r = s.substring(0, i) + s.substring(i + 1);
-                permutation(r, prefix + s.charAt(i));
+                permutations(r, prefix + s.charAt(i));
             }
         }
     }
 
-    public static void main(String[] args) {
-        new Permutation().permutation("12345");
+    private static void generateNumbers(int n, int m, List<Integer> prefix) {
+        if (m == 0) {
+            System.out.println(prefix);
+        } else {
+            for (int i = 0; i < n; i++) {
+                prefix.add(i);
+                generateNumbers(n, m - 1, prefix);
+                prefix.remove(prefix.size() - 1);
+            }
+        }
     }
 
+    private static void generateNumbers(int n, int m, String prefix) {
+        if (m == 0) {
+            System.out.println(prefix);
+        } else {
+            for (int i = 0; i < n; i++) {
+                generateNumbers(n, m - 1, prefix + i);
+            }
+        }
+    }
+
+    private static void generateBinary(int m, String prefix) {
+        if (m == 0) {
+            System.out.println(prefix);
+        } else {
+            generateBinary(m - 1, prefix + "0");
+            generateBinary(m - 1, prefix + "1");
+            generateBinary(m - 1, prefix + "2");
+        }
+    }
+
+
+    public static void main(String[] args) {
+        permutations("ABCD", "");
+//        generateNumbers(3, 3, new ArrayList<>());
+//        generateNumbers(5, 10, "");
+//        generateBinary(4, "");
+    }
 
 }
