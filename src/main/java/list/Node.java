@@ -18,7 +18,7 @@ public class Node {
         if (next != null)
             return data + " --> " + next.printForward();
         else
-            return String.valueOf(data);
+            return String.valueOf(data) + " --> NULL";
     }
 
     public static Node build(int... data) {
