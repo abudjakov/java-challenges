@@ -16,6 +16,7 @@ target/
 *.ipr
 
 .gradle
+.DS_Store
 
 ### NetBeans ###
 nbproject/private/
