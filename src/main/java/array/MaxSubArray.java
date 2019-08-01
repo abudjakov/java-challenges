@@ -39,5 +39,7 @@ public class MaxSubArray {
         System.out.println(solve2(new int[]{1, 2, 3, -2, 5})); // 9
         System.out.println(solve(new int[]{-2, -3, 4, -1, -2, 1, 5, -3})); // 7
         System.out.println(solve2(new int[]{-2, -3, 4, -1, -2, 1, 5, -3})); // 7
+        System.out.println(solve(new int[]{3, -7, 4})); // 4
+        System.out.println(solve2(new int[]{3, -7, 4})); // 4
     }
 }
