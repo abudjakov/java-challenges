@@ -1,5 +1,6 @@
 package string;
 
+import java.util.ArrayList;
 import java.util.List;
 
 // Permutations for n from n: n!
@@ -46,15 +47,16 @@ public class Permutation {
         } else {
             generateBinary(m - 1, prefix + "0");
             generateBinary(m - 1, prefix + "1");
-            generateBinary(m - 1, prefix + "2");
+//            generateBinary(m - 1, prefix + "2");
         }
     }
 
 
     public static void main(String[] args) {
-        permutations("ABCD", "");
+//        permutations("ABCD", "");
+//        permutations("123", "");
+        generateNumbers(3, 3, "");
 //        generateNumbers(3, 3, new ArrayList<>());
-//        generateNumbers(5, 10, "");
 //        generateBinary(4, "");
     }
 
