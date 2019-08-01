@@ -23,8 +23,12 @@ public class UniqueChars {
     }
 
     public static void main(String[] args) {
-        System.out.println(UniqueChars.isUnique("abcdef"));
-        System.out.println(UniqueChars.isUnique("abcdbe"));
+//        System.out.println((int) 'a');
+//        System.out.println((int) 'z');
+//        System.out.println((int) 'A');
+
+        System.out.println(UniqueChars.isUnique("abcdef")); // true
+        System.out.println(UniqueChars.isUnique("abcdbe")); // false
 
     }
 }
