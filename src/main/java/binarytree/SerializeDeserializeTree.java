@@ -54,7 +54,7 @@ public class SerializeDeserializeTree {
         TreeNode<Integer> n21 = new TreeNode<>(3);
         TreeNode<Integer> n22 = new TreeNode<>(6);
         TreeNode<Integer> n23 = new TreeNode<>(9);
-        TreeNode<Integer> n31 = new TreeNode<>(5);
+        TreeNode<Integer> n31 = new TreeNode<>(1);
         TreeNode<Integer> n32 = new TreeNode<>(8);
         TreeNode<Integer> n33 = new TreeNode<>(4);
 
