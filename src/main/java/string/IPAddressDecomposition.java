@@ -11,7 +11,7 @@ Output: ["255.255.11.135", "255.255.111.35"]
 import java.util.ArrayList;
 import java.util.List;
 
-// Time: O(n)
+// Time: O(1) because there are a limited amount of IPv4 addresses - 2^32, constant time
 // Space: O(1)
 public class IPAddressDecomposition {
 
