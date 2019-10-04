@@ -3,7 +3,7 @@ package array;
 
 // Time: O(n)
 // Space: O(1)
-public class RevereDigitsOfInteger {
+public class ReverseDigitsOfInteger {
 
     public static int solution(int n) {
         int f = Math.abs(n);
