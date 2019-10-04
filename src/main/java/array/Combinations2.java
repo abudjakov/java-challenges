@@ -47,7 +47,7 @@ public class Combinations2 {
             return;
         }
 
-        for (int i = offset; i <= n && n - i >= k - candidates.size(); i++) {
+        for (int i = offset; i <= n && n - i + 1 >= k - candidates.size(); i++) {
             // choose, explore, unchoose
             candidates.add(i);
             generateCombinations(n, k, i + 1, candidates, combinations);
