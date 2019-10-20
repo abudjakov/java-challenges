@@ -2,6 +2,7 @@ package classic;
 
 public class Fibonacci {
 
+    // Time: O(N) Space: O(1)
     public static void firstNumbers(int n) {
         int f = 0, g = 1;
 
@@ -12,6 +13,8 @@ public class Fibonacci {
         }
     }
 
+
+    // Time: O(2^N) Space: O(N)
     public static int fibonacci(int n) {
         if (n == 0 || n == 1) {
             return n;

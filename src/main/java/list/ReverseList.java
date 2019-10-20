@@ -28,7 +28,9 @@ public class ReverseList {
     public static void main(String[] args) {
         Node node = Node.build(1, 2, 3, 4, 5);
         System.out.println("before: " + node.printForward());
-//        System.out.println("after: " + reverse(node).printForward());
         System.out.println("after: " + reverse(node, null).printForward());
+
+        node = Node.build(1, 2, 3, 4, 5);
+        System.out.println("after: " + reverse(node).printForward());
     }
 }

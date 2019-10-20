@@ -22,7 +22,7 @@ public class CoinChange {
     // Bottom - Up
     public static int solution(int[] coins, int amount) {
         int[] memo = new int[amount + 1];
-        Arrays.fill(memo, amount + 1);
+        Arrays.fill(memo, Integer.MAX_VALUE);
         memo[0] = 0;
 
         for (int i = 1; i <= amount; i++) {
@@ -33,7 +33,7 @@ public class CoinChange {
             }
         }
 
-        return memo[amount] == amount + 1 ? -1 : memo[amount];
+        return memo[amount] == Integer.MIN_VALUE ? -1 : memo[amount];
     }
 
     // Up - Down
