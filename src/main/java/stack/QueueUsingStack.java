@@ -54,10 +54,10 @@ public class QueueUsingStack {
         QueueUsingStack queue = new QueueUsingStack();
         queue.push(10);
         queue.push(20);
-        System.out.println(queue.pop()); //20
-        System.out.println(queue.peek()); //10
-        System.out.println(queue.empty()); //false
         System.out.println(queue.pop()); //10
+        System.out.println(queue.peek()); //20
+        System.out.println(queue.empty()); //false
+        System.out.println(queue.pop()); //20
         System.out.println(queue.empty()); //true
     }
 

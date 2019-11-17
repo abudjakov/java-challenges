@@ -59,6 +59,7 @@ public class Staircase {
                 if (diff < 0) continue;
                 memo[i] += memo[diff];
             }
+            System.out.println("i = " + i + " " + Arrays.toString(memo));
         }
         return memo[n];
     }
@@ -70,9 +71,9 @@ public class Staircase {
 //        log.info("steps [1, 2], height 2: {}", calculate(new int[]{1, 2}, 5)); // 8
 //        log.info("steps [1, 2], height 2: {}", calculate(new int[]{1, 3, 5}, 10)); // 47
 //
-        log.info("number_of_ways: {}", number_of_ways(new int[]{1, 3, 5}, 10)); // 47
-        log.info("number_of_ways_down_up: {}", number_of_ways_down_up(new int[]{1, 2}, 5)); // 5
-        log.info("number_of_ways_down_up: {}", number_of_ways_down_up(new int[]{1, 3, 5}, 10)); // 47
+//        log.info("number_of_ways: {}", number_of_ways(new int[]{1, 2, 5, 10}, 10)); // 129
+        log.info("number_of_ways_down_up: {}", number_of_ways_down_up(new int[]{1, 2}, 5)); // 8
+//        log.info("number_of_ways_down_up: {}", number_of_ways_down_up(new int[]{1, 2, 5, 10}, 10)); // 129
     }
 
 

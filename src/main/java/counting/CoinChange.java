@@ -22,7 +22,7 @@ public class CoinChange {
     // Bottom - Up
     public static int solution(int[] coins, int amount) {
         int[] memo = new int[amount + 1];
-        Arrays.fill(memo, Integer.MAX_VALUE);
+        Arrays.fill(memo, 1000);
         memo[0] = 0;
 
         for (int i = 1; i <= amount; i++) {
@@ -33,7 +33,7 @@ public class CoinChange {
             }
         }
 
-        return memo[amount] == Integer.MIN_VALUE ? -1 : memo[amount];
+        return memo[amount] == 1000 ? -1 : memo[amount];
     }
 
     // Up - Down
@@ -62,11 +62,11 @@ public class CoinChange {
     }
 
     public static void main(String[] args) {
-        System.out.println(solution2(new int[]{1, 2, 5}, 0)); // 0
-        System.out.println(solution2(new int[]{1, 2, 5}, 11)); // 3
-        System.out.println(solution2(new int[]{2, 5}, 24)); // 6
-        System.out.println(solution2(new int[]{2, 3, 5}, 18)); // 4
-        System.out.println(solution2(new int[]{5, 10}, 12)); // -1
-        System.out.println(solution2(new int[]{2}, 3)); // -1
+        System.out.println(solution(new int[]{1, 2, 5}, 0)); // 0
+        System.out.println(solution(new int[]{1, 2, 5}, 11)); // 3
+        System.out.println(solution(new int[]{2, 5}, 24)); // 6
+        System.out.println(solution(new int[]{2, 3, 5}, 18)); // 4
+        System.out.println(solution(new int[]{5, 10}, 12)); // -1
+        System.out.println(solution(new int[]{2}, 3)); // -1
     }
 }
