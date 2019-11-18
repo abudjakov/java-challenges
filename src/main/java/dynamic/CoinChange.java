@@ -1,4 +1,4 @@
-package counting;
+package dynamic;
 
 
 import java.util.Arrays;

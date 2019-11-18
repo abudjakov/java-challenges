@@ -1,4 +1,4 @@
-package counting;
+package array;
 
 
 /*
@@ -18,7 +18,7 @@ array A such that:
         i range is [1::N]
 
         */
-public class IsPermutation {
+public class IsArrayPermutation {
 
     static boolean solution(int[] A) {
         boolean[] arr = new boolean[A.length];
