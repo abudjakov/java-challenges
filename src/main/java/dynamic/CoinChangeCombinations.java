@@ -36,9 +36,9 @@ public class CoinChangeCombinations {
     }
 
     public static void main(String[] args) {
-        System.out.println(number_of_ways_to_pay_change(new int[]{1, 2}, 3)); // 3 [1, 2][2, 1][1, 1, 1]
+//        System.out.println(number_of_ways_to_pay_change(new int[]{1, 2}, 3)); // 3 [1, 2][2, 1][1, 1, 1]
         System.out.println(number_of_ways_to_pay_change(new int[]{1, 2}, 4)); // 5 [2, 2][2, 1, 1][1, 2, 1][1, 1, 2][1, 1, 1, 1]
-        System.out.println(number_of_ways_to_make_change(new int[]{1, 2}, 3)); // 2 [1, 1, 1][2, 1]
-        System.out.println(number_of_ways_to_make_change(new int[]{1, 2}, 4)); // 3 [1, 1, 1, 1][2, 2][1, 1, 2]
+//        System.out.println(number_of_ways_to_make_change(new int[]{1, 2}, 3)); // 2 [1, 1, 1][2, 1]
+//        System.out.println(number_of_ways_to_make_change(new int[]{1, 2}, 4)); // 3 [1, 1, 1, 1][2, 2][1, 1, 2]
     }
 }
