@@ -13,7 +13,7 @@
         <java.version>1.8</java.version>
         <skip.unit.tests>false</skip.unit.tests>
 
-        <log4j2.version>2.7</log4j2.version>
+        <log4j2.version>2.15.0</log4j2.version>
         <slf4j.api.version>1.7.25</slf4j.api.version>
     </properties>
 
